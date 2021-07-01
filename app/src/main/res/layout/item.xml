@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="15dp"
+    app:cardMaxElevation="10dp"
+    android:layout_margin="10dp"
+    app:cardElevation="15dp"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/gradiet_blue"
+        android:padding="5dp"
+        android:gravity="center"
+        android:id="@+id/collaped"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image_small"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:civ_border_width="2dp"
+            android:padding="5dp"
+            android:visibility="visible"
+            android:src="@color/white"
+            app:civ_border_color="#FBF7F7"/>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:gravity="center|left"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/institution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="TextView"
+            android:textSize="20dp"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:gravity="center"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/expanded"
+>
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:civ_border_width="2dp"
+        android:padding="5dp"
+        android:visibility="visible"
+        android:src="@color/white"
+        android:background="@drawable/netwrok"
+        app:civ_border_color="#FF000000"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:visibility="gone"
+        android:scaleType="centerCrop"
+        android:id="@+id/imageview"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_product_slider_image"
+    android:gravity="center"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/form_textview_margintop"
+        android:text="TextView"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/agegender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/form_textview_margintop"
+        android:text="TextView"
+        android:textSize="12dp"
+        android:textColor="#7A000000"
+        android:gravity="center"
+        android:textStyle="normal"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/desgnation_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/form_textview_margintop"
+        android:text="TextView"
+        android:textSize="15dp"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_baseline_work_24"
+        android:textColor="#A4000000"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed-medium"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/education"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/form_textview_margintop"
+        android:text="TextView"
+        android:textSize="14dp"
+        android:drawablePadding="2dp"
+        android:drawableLeft="@drawable/ic_baseline_layers_24"
+        android:textColor="#0A5591"
+        android:gravity="center"
+        android:drawableTint="#095693"
+        android:layout_marginBottom="10dp"
+        tools:ignore="MissingConstraints" />
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>
+    </androidx.cardview.widget.CardView>

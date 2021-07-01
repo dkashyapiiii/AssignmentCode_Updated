@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:gravity="center"
+        android:background="@drawable/netwrok_blue_main"
+        android:id="@+id/button"
+        android:orientation="vertical">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/pullToRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+            android:layout_above="@+id/atbottom"
+            tools:ignore="MissingConstraints">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/recycler"
+ />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="visible"
+            android:gravity="center"
+            android:id="@+id/atbottom"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/jsonfile"
+                android:textColor="@color/white"
+                android:text="UPLOAD FILE"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/gradiet_blue"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="center"
+        android:id="@+id/nointernet"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/error"
+            android:id="@+id/imageview"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:text="RETRY"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
